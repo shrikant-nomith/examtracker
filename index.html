@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GATE CSE Progress Tracker</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+        padding: 20px;
+      }
+      .tracker-container {
+        max-width: 600px;
+        margin: auto;
+      }
+      .tracker-container h2 {
+        text-align: center;
+      }
+      .subject {
+        margin-bottom: 20px;
+      }
+      .subject h3 {
+        margin: 10px 0;
+      }
+      .progress-bar {
+        width: 100%;
+        background-color: #f3f3f3;
+        border-radius: 5px;
+        margin: 10px 0;
+      }
+      .progress-bar-fill {
+        height: 20px;
+        width: 0%;
+        background-color: #4caf50;
+        border-radius: 5px;
+        text-align: center;
+        color: white;
+        line-height: 20px;
+      }
+      button {
+        background-color: #4caf50;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        margin-top: 10px;
+        cursor: pointer;
+      }
+      button:disabled {
+        background-color: #ccc;
+      }
+      input {
+        width: 60px;
+        margin-right: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="tracker-container">
+      <h2>GATE CSE Progress Tracker</h2>
+      <div id="subjects"></div>
+      <button id="addSubject">Add Subject</button>
+    </div>
+    <script src="tracker.js"></script>
+  </body>
+</html>
